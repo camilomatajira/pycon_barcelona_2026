@@ -1,0 +1,16 @@
+[project]
+name = "sysadmindb"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "maturin>=1.13.3",
+    "pytest>=9.0.3",
+    "pytest-benchmark>=5.2.3",
+    "sysadmindb_rs"
+]
+
+[tool.uv.sources]
+sysadmindb_rs = { path = "sysadmindb_rs", editable = true }  #
+
